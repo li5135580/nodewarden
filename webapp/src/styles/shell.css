@@ -167,6 +167,14 @@
   @apply flex items-center gap-2.5 rounded-xl border border-transparent px-3 py-2.5 text-sm font-semibold text-muted-strong no-underline transition;
 }
 
+.side-link span {
+  @apply min-w-0 flex-1 truncate;
+}
+
+.side-link svg {
+  @apply shrink-0;
+}
+
 .side-link:hover {
   background: #fff;
   border-color: rgba(128, 152, 192, 0.18);
@@ -187,6 +195,10 @@
 
 .route-stage {
   @apply h-full min-h-0 overflow-auto;
+}
+
+.route-stage-fixed {
+  overflow: hidden;
 }
 
 .mobile-sidebar-mask {
